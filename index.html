@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiddotales</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #2c3e50;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 8px;
+    border-radius: 25px;
+    border: 1px solid #bdc3c7;
+    margin: 0 10px;
+    width: 200px;
+    outline: none;
+    background: #ecf0f1;
+    color: #2c3e50;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #76c3f5;
+    transform: scale(1.05);
+}
+
+/* Container */
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    padding: 15px;
+    background-color: #51575d;
+    color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 18px;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    background-color: #2c3e50;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: #1f2a36;
+    transform: scale(1.05);
+}
+
+/* Content */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    margin-left: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.videos, .books {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+ .book {
+    background: #ecf0f1;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bold;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    color: #2c3e50;
+}
+
+.video:hover, .book:hover {
+    background: #d5dbdb;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    margin-top: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.settings{
+    padding-bottom: 100px;
+
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div
+           class="logo-text">Kiddotales
+        </div>
+        <nav>
+            <button>Home</button>
+            <input type="text" placeholder="Search..." class="search-bar">
+            <button class="search-icon">🔍</button>
+            <button class="login-button">Login</button>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <button>Fairy Tales</button>
+            <br>
+            
+    
+            <button>Moral Stories</button>
+            <br>
+           
+            <button>Science</button>
+            <br>
+            
+            <button>Cultural</button>
+            <br>
+            
+            <button>Bedtime</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="settings">
+                <button>Settings</button>
+                <button>Log Out</button>
+            </div>
+        </aside>
+        
+        <main class="content">
+            <section class="videos">
+                <div  class="video"><iframe width="300" height="215" src="https://www.youtube.com/embed/jTeYKNfD1Fc?si=eNypUSGiWKUtdmwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br> Story Title1</div>
+                
+                <br><div class="video"><iframe width="300" height="215" src="https://www.youtube.com/embed/iSYB3HE3-CI?si=SMnUR2l6WH-576Z6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br> Story Title2</div>
+                
+                <br><div class="video"> <iframe width="300" height="215" src="https://www.youtube.com/embed/jDVTbMzPbQg?si=6Bz0NgILjqmPgCLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br> Story Title3</div>
+               
+                <br><div class="video"><iframe width="300" height="215" src="https://www.youtube.com/embed/9ofL45Mrzj0?si=nFezdXOZL8spPt0u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br> Story Title4</div>
+                
+                <br><div class="video"><iframe width="300" height="215" src="https://www.youtube.com/embed/ZdeDNWEcuss?si=Pbr_x0hpalKZEAzT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br> Story Title5</div>
+                
+                <br><div class="video"> <iframe width="300" height="215" src="https://www.youtube.com/embed/JcxVoV1ah78?si=q224EkW2LSnXSy10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br> Story Title6</div>
+               
+            </section>
+            <section class="books">
+                <div class="book">
+                    <a href="https://www.konyabasakkoleji.k12.tr/pdf/stories.pdf">moral stories</a>
+                </div>
+                <div class="book">
+                    <a href="https://teach.starfall.com/materials/books/learn-to-read/7-Pete-by-Starfall.pdf">peets sheep</a>
+                </div>
+                <div class="book">
+                    <a href="https://teach.starfall.com/materials/books/learn-to-read/3-TinMan-by-Starfall.pdf">the big hit</a>
+                </div>
+                <div class="book">
+                    <a href="https://teach.starfall.com/materials/books/learn-to-read/6-Jake-by-Starfall.pdf">jakes tail</a>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <footer>
+        <p>© 2025 Kiddotales | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
